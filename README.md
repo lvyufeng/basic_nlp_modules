@@ -11,5 +11,5 @@ Implementation of some basic nlp modules, like RNN, LSTMs, Transformer, etc..
 - [ ] Sequence2Sequence
 - [ ] Self-Attention
 - [x] Self-Attention(Scaled Dot)
-- [ ] Multi-Head Attention
+- [x] Multi-Head Attention
 - [ ] Transformer
