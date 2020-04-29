@@ -14,9 +14,11 @@ class ScaledDotAttention(nn.Module):
         self.dropout = nn.Dropout(dropout)
         self.softmax = nn.Softmax(dim = -1)
 
-    def forward(self, Q, K, V):
+    def forward(self, Q, K, V, mask = None):
         
         output = torch.matmul(Q,K.transpose(-1,-2)) / self.scale
+        if mask:
+            output.masked_fill_(mask, -1e9)
         output = self.softmax(output)
         output = self.dropout(output)
         return torch.matmul(output,V)

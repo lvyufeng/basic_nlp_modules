@@ -12,4 +12,5 @@ Implementation of some basic nlp modules, like RNN, LSTMs, Transformer, etc..
 - [ ] Self-Attention
 - [x] Self-Attention(Scaled Dot)
 - [x] Multi-Head Attention
-- [ ] Transformer
+- [x] Transformer
+- [] CRF
