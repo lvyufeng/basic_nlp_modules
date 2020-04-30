@@ -4,6 +4,8 @@ import torch.nn as nn
 
 class MultiHeadAttention(nn.Module):
     """
+    from paper: 'Attention is all you need <https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf>'
+
     MultiHead(Q,K,V) = Concat(head_1,...,head_h) W^O
     head_i = Attention(Q*W_i^Q, K*W_i^K, V*W_i^V)
     """

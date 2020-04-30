@@ -9,8 +9,12 @@ Implementation of some basic nlp modules, like RNN, LSTMs, Transformer, etc..
 - [ ] GRU
 - [ ] Normal Attention
 - [ ] Sequence2Sequence
-- [ ] Self-Attention
+- [x] Self-Attention
 - [x] Self-Attention(Scaled Dot)
 - [x] Multi-Head Attention
 - [x] Transformer
-- [] CRF
+- [x] CRF
+- [ ] BERT
+- [ ] ELMo
+- [ ] Roberta
+- [ ] Albert

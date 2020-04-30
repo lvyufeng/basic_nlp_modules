@@ -3,6 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 class SelfAttention(nn.Module):
     """
+    from paper: 'A structured self-attentive sentence embedding <https://arxiv.org/pdf/1703.03130.pdf>'
+
     LSTM hidden state H as input,
         A = softmax(W_s2 * tanh(W_s1 * H^T))
         M = A * H

@@ -4,6 +4,8 @@ import math
 
 class ScaledDotAttention(nn.Module):
     """
+    from paper: 'Attention is all you need <https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf>'
+
     Attention(Q,K,V) = softmax(Q*K^T/sqrt(d_k))*V
     """
     def __init__(self, key_size, value_size, dropout = 0.0):
