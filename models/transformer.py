@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from multi_head_attention import MultiHeadAttention
+from attentions.multi_head_attention import MultiHeadAttention
 
 """
 from paper: 'Attention is all you need <https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf>'
