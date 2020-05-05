@@ -10,6 +10,7 @@ Implementation of some basic nlp modules, like RNN, LSTMs, Transformer, etc..
 - [ ] MLP 
 - [x] LSTM
 - [ ] GRU
+- [ ] Lattice LSTM
 
 ## Embeddings
 ### For Embeddings，we focus on how to train it.
@@ -27,6 +28,7 @@ Implementation of some basic nlp modules, like RNN, LSTMs, Transformer, etc..
 ## Models
 - [ ] Sequence2Sequence (Google)
 - [x] Transformer (Google)
+- [ ] Adapting Transformer(Fudan University)
 - [ ] BERT (Google)
 - [ ] ELMo (AllenAI)
 - [ ] GPT  
