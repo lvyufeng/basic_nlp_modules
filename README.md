@@ -7,7 +7,7 @@ Implementation of some basic nlp modules, like RNN, LSTMs, Transformer, etc..
 - [x] Ternary Search Tree (Dictionary)
 
 ## Layers
-- [ ] MLP 
+- [x] MLP 
 - [x] LSTM
 - [ ] GRU
 - [ ] Lattice LSTM
