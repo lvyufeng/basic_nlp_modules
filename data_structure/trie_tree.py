@@ -128,7 +128,7 @@ class TernarySearchTree(object):
                 currNode = currNode.right
 
     def match_long(self, key:str, offset:int) -> str:
-        ret = None
+        ret = []
         if not key or not self.root or offset >= len(key):
             return ret
         
@@ -136,12 +136,15 @@ class TernarySearchTree(object):
         charIndex = offset
         while True:
             if currNode is None:
-                return ret
+                charIndex += 1
+                currNode = self.root
+                continue
+                # return ret
             charComp = ord(key[charIndex]) - currNode.splitchar
             if charComp == 0:
                 charIndex += 1
                 if currNode.data is not None:
-                    ret = currNode.data
+                    ret.append((str(currNode.data),charIndex))
                 if charIndex == len(key):
                     return ret
                 currNode = currNode.mid
